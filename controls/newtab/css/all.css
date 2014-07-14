@@ -62,3 +62,76 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 1, ../sass/partials/style.scss */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: lighter;
+  font-size: 54px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+/* line 8, ../sass/partials/style.scss */
+body .main_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+/* line 13, ../sass/partials/style.scss */
+body .editing {
+  display: inline-block;
+  min-width: 30px;
+  margin-bottom: -8px;
+  padding-bottom: 5px;
+  cursor: auto;
+  outline: none;
+  border-bottom: solid 3px #d9d9d9;
+}
+/* line 23, ../sass/partials/style.scss */
+body #clock {
+  text-align: center;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 180px;
+  font-weight: lighter;
+}
+/* line 30, ../sass/partials/style.scss */
+body #day_wish {
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 54px;
+  font-weight: lighter;
+}
+/* line 36, ../sass/partials/style.scss */
+body #day_wish.name_question {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 41, ../sass/partials/style.scss */
+body form {
+  display: inline-block;
+}
+/* line 44, ../sass/partials/style.scss */
+body form #name_field {
+  height: 74px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: lighter;
+  font-size: 54px;
+  border: 0;
+  border-bottom: solid 3px #d9d9d9;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+}
+/* line 55, ../sass/partials/style.scss */
+body form #name_field:focus {
+  border-bottom: solid 3px #a6a6a6;
+}
+/* line 59, ../sass/partials/style.scss */
+body form #name_field.error {
+  border-bottom: solid 3px #c0392b;
+}

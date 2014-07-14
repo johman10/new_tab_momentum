@@ -1,0 +1,64 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: lighter;
+  font-size: 54px;
+  letter-spacing: 0;
+  white-space: nowrap;
+
+  .main_container {
+    @include centre;
+    display: none;
+  }
+  
+  .editing {
+    display: inline-block;
+    min-width: 30px;
+    margin-bottom: -8px;
+    padding-bottom: 5px;
+    cursor: auto;
+    outline: none;
+    border-bottom: solid 3px hsl(0, 0%, 85%);
+  }
+
+  #clock {
+    text-align: center;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 180px;
+    font-weight: lighter;
+  }
+
+  #day_wish {
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 54px;
+    font-weight: lighter; 
+
+    &.name_question {
+      font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+
+  form {
+    display: inline-block;
+
+    #name_field {
+      height: 74px;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      font-weight: lighter;
+      font-size: 54px;
+      border: 0;
+      border-bottom: solid 3px hsl(0, 0%, 85%);
+      outline: none;
+      background-color: transparent;
+      text-align: center;
+
+      &:focus {
+        border-bottom: solid 3px hsl(0, 0%, 65%);
+      }
+
+      &.error {
+        border-bottom: solid 3px #c0392b;
+      }
+    }
+  }
+}
