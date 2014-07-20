@@ -71,7 +71,16 @@ body {
   letter-spacing: 0;
   white-space: nowrap;
 }
-/* line 8, ../sass/partials/style.scss */
+/* line 11, ../sass/partials/style.scss */
+body #body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+/* line 20, ../sass/partials/style.scss */
 body .main_container {
   position: absolute;
   top: 50%;
@@ -82,8 +91,43 @@ body .main_container {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: none;
+  opacity: .7;
 }
-/* line 13, ../sass/partials/style.scss */
+/* line 25, ../sass/partials/style.scss */
+body .main_container.background--light {
+  color: black;
+}
+/* line 28, ../sass/partials/style.scss */
+body .main_container.background--light .editing {
+  border-bottom: solid 3px black;
+}
+/* line 32, ../sass/partials/style.scss */
+body .main_container.background--light form #name_field {
+  border-bottom: solid 3px black;
+}
+/* line 35, ../sass/partials/style.scss */
+body .main_container.background--light form #name_field:focus {
+  opacity: 1;
+  border-bottom: solid 3px black;
+}
+/* line 43, ../sass/partials/style.scss */
+body .main_container.background--dark {
+  color: white;
+}
+/* line 46, ../sass/partials/style.scss */
+body .main_container.background--dark .editing {
+  border-bottom: solid 3px white;
+}
+/* line 50, ../sass/partials/style.scss */
+body .main_container.background--dark form #name_field {
+  border-bottom: solid 3px white;
+}
+/* line 53, ../sass/partials/style.scss */
+body .main_container.background--dark form #name_field:focus {
+  opacity: 1;
+  border-bottom: solid 3px white;
+}
+/* line 61, ../sass/partials/style.scss */
 body .editing {
   display: inline-block;
   min-width: 30px;
@@ -91,47 +135,110 @@ body .editing {
   padding-bottom: 5px;
   cursor: auto;
   outline: none;
-  border-bottom: solid 3px #d9d9d9;
+  border-bottom: solid 3px black;
 }
-/* line 23, ../sass/partials/style.scss */
+/* line 71, ../sass/partials/style.scss */
 body #clock {
   text-align: center;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 180px;
   font-weight: lighter;
 }
-/* line 30, ../sass/partials/style.scss */
+/* line 78, ../sass/partials/style.scss */
 body #day_wish {
   text-align: center;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 54px;
   font-weight: lighter;
 }
-/* line 36, ../sass/partials/style.scss */
+/* line 84, ../sass/partials/style.scss */
 body #day_wish.name_question {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 41, ../sass/partials/style.scss */
+/* line 89, ../sass/partials/style.scss */
 body form {
   display: inline-block;
 }
-/* line 44, ../sass/partials/style.scss */
+/* line 92, ../sass/partials/style.scss */
 body form #name_field {
   height: 74px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: lighter;
   font-size: 54px;
   border: 0;
-  border-bottom: solid 3px #d9d9d9;
   outline: none;
   background-color: transparent;
   text-align: center;
+  border-bottom: solid 3px black;
 }
-/* line 55, ../sass/partials/style.scss */
+/* line 103, ../sass/partials/style.scss */
 body form #name_field:focus {
-  border-bottom: solid 3px #a6a6a6;
+  opacity: 1;
 }
-/* line 59, ../sass/partials/style.scss */
+/* line 107, ../sass/partials/style.scss */
 body form #name_field.error {
-  border-bottom: solid 3px #c0392b;
+  border-bottom: solid 3px #c0392b !important;
+}
+/* line 113, ../sass/partials/style.scss */
+body .main_focus_container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: .7;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  bottom: 20px;
+}
+/* line 121, ../sass/partials/style.scss */
+body .main_focus_container.background--light {
+  color: black;
+}
+/* line 124, ../sass/partials/style.scss */
+body .main_focus_container.background--light #focus_form input {
+  border-bottom: solid 3px black;
+}
+/* line 129, ../sass/partials/style.scss */
+body .main_focus_container.background--dark {
+  color: white;
+}
+/* line 133, ../sass/partials/style.scss */
+body .main_focus_container .focus_question {
+  text-align: center;
+  display: none;
+}
+/* line 138, ../sass/partials/style.scss */
+body .main_focus_container #focus_form {
+  width: 100%;
+  display: none;
+}
+/* line 142, ../sass/partials/style.scss */
+body .main_focus_container #focus_form input {
+  height: 40px;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 40px;
+  border: 0;
+  border-bottom: solid 3px black;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+}
+/* line 155, ../sass/partials/style.scss */
+body .main_focus_container #focus_form input:focus {
+  opacity: 1;
+}
+/* line 159, ../sass/partials/style.scss */
+body .main_focus_container #focus_form input.error {
+  border-bottom: solid 3px #c0392b !important;
+}
+/* line 165, ../sass/partials/style.scss */
+body .main_focus_container .focus_value {
+  display: none;
 }

@@ -5,16 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>New tab</title>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,100,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/all.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/all.css" type="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://d3js.org/d3.v3.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/trianglify.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/background-check.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/name.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/time.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/background.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/focus.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-  <div class="main_container">
-    <div id="clock"></div>
-    <div id="day_wish">
-      Good <span id="segment"></span>, <span id="name"></span>.
+  <div id="body">
+    <div class="main_container">
+      <div id="clock"></div>
+      <div id="day_wish">
+        Good <span id="segment"></span>, <span id="name"></span>.
+      </div>
+    </div>
+    <div class="main_focus_container">
+      <div class="focus_question">
+        What is your main focus for today?
+      </div>
+      <form name='focus_form' action="" id="focus_form" method='GET'>
+        <input type="text" name="focus_field" class="focus_field">
+      </form>
+      <div class="focus_value">
+        Value
+      </div>
     </div>
   </div>
 </body>

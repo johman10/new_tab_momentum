@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $( ".main_container" ).fadeIn( "slow" )
-  if (get_cookie("name")) {
-    $('#name').html(get_cookie("name"))
+  if ($.cookie("name")) {
+    $('#name').html($.cookie("name"))
   } else {
     $('#clock').hide();
     $('#day_wish').html("<span id='name_question'>Hello, what’s your name? </span><form name='name' action='' id='name_form' method='GET'><input type='text' name='name' id='name_field' value='' /></form>")
@@ -16,7 +16,7 @@ $(document).ready(function() {
         document.cookie="name=" + $( "#name_field" ).val() + "; expires=" + date;
         $('#clock').show();
         $('#day_wish').html('Good <span id="segment"></span>, <span id="name"></span>.');
-        $('#name').html(get_cookie("name"));
+        $('#name').html($.cookie("name"));
         $('#segment').html(day_segment)
         $( ".main_container" ).fadeIn( "slow" )
       });
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 function save_edit_name() {
   if ($("#name").html() != "") {
-    delete_cookie('name');
+    $.removeCookie("name");
     var date = new Date;
     date.setDate(date.getFullYear() + 10);
     document.cookie="name=" + $( "#name" ).html() + "; expires=" + date;
@@ -52,7 +52,7 @@ function save_edit_name() {
     $('#name').removeClass('editing')
   }
   else {
-    $('#name').html(get_cookie("name"))
+    $('#name').html($.cookie("name"))
     $('#name').removeAttr('contentEditable', false);
     $('#name').removeClass('editing')
   }
@@ -71,25 +71,4 @@ function day_segment() {
   if (h >= 18 || h < 6) {
     $('#segment').html('evening')
   }
-}
-
-function get_cookie ( cookie_name )
-{
-    // http://www.thesitewizard.com/javascripts/cookies.shtml
-    var cookie_string = document.cookie ;
-    if (cookie_string.length != 0) {
-        var cookie_value = cookie_string.match (
-                        '(^|;)[\s]*' +
-                        cookie_name +
-                        '=([^;]*)' );
-        return decodeURIComponent ( cookie_value[2] ) ;
-    }
-    return '' ;
-}
-
-function delete_cookie ( cookie_name )
-{
-    // http://www.thesitewizard.com/javascripts/cookies.shtml
-    document.cookie = cookie_name +
-                       "=; max-age=0;"
 }

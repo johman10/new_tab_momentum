@@ -4,10 +4,58 @@ body {
   font-size: 54px;
   letter-spacing: 0;
   white-space: nowrap;
+  // width: 100%;
+  // height: 100%;
+  // background-image: url('http://leicester.tab.co.uk/files/2013/10/black.png') !important;
+
+  #body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
 
   .main_container {
     @include centre;
     display: none;
+    opacity: .7;
+
+    &.background--light {
+      color: $black;
+
+      .editing {
+        border-bottom: solid 3px $black;
+      }
+      
+      form #name_field {
+        border-bottom: solid 3px $black;
+
+        &:focus {
+          opacity: 1;
+          border-bottom: solid 3px $black;
+        }
+      }
+
+    }
+
+    &.background--dark {
+      color: $white;
+
+      .editing {
+        border-bottom: solid 3px $white;
+      }
+
+      form #name_field {
+        border-bottom: solid 3px $white;
+
+        &:focus {
+          opacity: 1;
+          border-bottom: solid 3px $white;
+        }
+      }
+    }
   }
   
   .editing {
@@ -17,7 +65,7 @@ body {
     padding-bottom: 5px;
     cursor: auto;
     outline: none;
-    border-bottom: solid 3px hsl(0, 0%, 85%);
+    border-bottom: solid 3px $black;
   }
 
   #clock {
@@ -47,18 +95,75 @@ body {
       font-weight: lighter;
       font-size: 54px;
       border: 0;
-      border-bottom: solid 3px hsl(0, 0%, 85%);
       outline: none;
       background-color: transparent;
       text-align: center;
+      border-bottom: solid 3px $black;
 
       &:focus {
-        border-bottom: solid 3px hsl(0, 0%, 65%);
+        opacity: 1;
       }
 
       &.error {
-        border-bottom: solid 3px #c0392b;
+        border-bottom: solid 3px #c0392b !important;
       }
+    }
+  }
+
+  .main_focus_container {
+    @include centre(x);
+    opacity: .7;
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    bottom: 20px;
+
+    &.background--light {
+      color: $black;
+
+      #focus_form input {
+        border-bottom: solid 3px $black;
+      }
+    }
+
+    &.background--dark {
+      color: $white;
+    }
+
+    .focus_question {
+      text-align: center;
+      display: none;
+    }
+
+    #focus_form {
+      width: 100%;
+      display: none;
+
+      input {
+        height: 40px;
+        font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+        line-height: 40px;
+        border: 0;
+        border-bottom: solid 3px $black;
+        outline: none;
+        background-color: transparent;
+        text-align: center;
+        width: 100%;
+
+        &:focus {
+          opacity: 1;
+        }
+
+        &.error {
+          border-bottom: solid 3px #c0392b !important;
+        }
+      }
+    }
+
+    .focus_value {
+      display: none;
     }
   }
 }

@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'centre'.
-        on line 9 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss, in `centre'
-        from line 9 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss
+        on line 21 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss, in `centre'
+        from line 21 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss
 
 Backtrace:
-/Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss:9:in `centre'
-/Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss:9
+/Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss:21:in `centre'
+/Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss:21
 /Users/johan/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/johan/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/johan/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -88,4 +88,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'centre'.\A         on line 9 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss, in `centre'\A         from line 9 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss"; }
+  content: "Syntax error: Undefined mixin 'centre'.\A         on line 21 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss, in `centre'\A         from line 21 of /Users/johan/Sites/new_tab/controls/newtab/sass/partials/style.scss"; }
