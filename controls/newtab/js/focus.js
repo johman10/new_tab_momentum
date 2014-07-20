@@ -11,7 +11,7 @@ $(document).ready(function() {
     if ($(".focus_field").val().trim().length > 0) {
       $( ".focus_question, #focus_form" ).fadeOut( "slow", function() {
         var date = new Date;
-        date.setDate(date.getFullYear() + 10);
+        date.setDate(date.getDay() + 1);
         document.cookie="focus=" + $( ".focus_field" ).val() + "; expires=" + date;
         $(".focus_value").html($.cookie("focus"))
         $(".focus_value").fadeIn("slow");

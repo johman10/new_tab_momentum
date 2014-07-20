@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('#name').html($.cookie("name"))
   } else {
     $('#clock').hide();
+    $('.main_focus_container').hide();
     $('#day_wish').html("<span id='name_question'>Hello, what’s your name? </span><form name='name' action='' id='name_form' method='GET'><input type='text' name='name' id='name_field' value='' /></form>")
   }
   // localStorage.setItem("name", var_name);
@@ -19,6 +20,7 @@ $(document).ready(function() {
         $('#name').html($.cookie("name"));
         $('#segment').html(day_segment)
         $( ".main_container" ).fadeIn( "slow" )
+        $('.main_focus_container').fadeIn( "slow" );
       });
       event.preventDefault()
     }
