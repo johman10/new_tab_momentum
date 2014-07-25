@@ -15,11 +15,4 @@ $(document).ready(function() {
   }
 
   $('#body').css('background-image', localStorage.background_info);
-
-  BackgroundCheck.init({
-    targets: '.main_focus_container, .main_container',
-    images: '#body'
-  });
-
-  BackgroundCheck.refresh()
 });

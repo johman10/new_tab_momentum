@@ -20,42 +20,8 @@ body {
   .main_container {
     @include centre;
     display: none;
-    opacity: .7;
-
-    &.background--light {
-      color: $black;
-
-      .editing {
-        border-bottom: solid 3px $black;
-      }
-      
-      form #name_field {
-        border-bottom: solid 3px $black;
-
-        &:focus {
-          opacity: 1;
-          border-bottom: solid 3px $black;
-        }
-      }
-
-    }
-
-    &.background--dark {
-      color: $white;
-
-      .editing {
-        border-bottom: solid 3px $white;
-      }
-
-      form #name_field {
-        border-bottom: solid 3px $white;
-
-        &:focus {
-          opacity: 1;
-          border-bottom: solid 3px $white;
-        }
-      }
-    }
+    opacity: .8;
+    color: $black;
   }
   
   .editing {
@@ -112,23 +78,12 @@ body {
 
   .main_focus_container {
     @include centre(x);
-    opacity: .7;
+    opacity: .8;
     font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 30px;
     bottom: 20px;
-
-    &.background--light {
-      color: $black;
-
-      #focus_form input {
-        border-bottom: solid 3px $black;
-      }
-    }
-
-    &.background--dark {
-      color: $white;
-    }
+    color: $black;
 
     .focus_question {
       text-align: center;
@@ -155,15 +110,40 @@ body {
         &:focus {
           opacity: 1;
         }
-
-        &.error {
-          border-bottom: solid 3px #c0392b !important;
-        }
       }
     }
 
     .focus_value {
       display: none;
+      height: 30px;
+      line-height: 30px;
+
+      &:hover .delete {
+        opacity: .9;
+      }
+
+      .delete {
+        position: absolute;
+        display: block;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        right: -45px;
+        border-radius: 100px;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 26px;
+        opacity: 0;
+        -webkit-transition: all 0.1s ease-in-out;
+        -webkit-transform-origin: 50% 50%;
+        text-align: center;
+
+        &:hover {
+          border: 1px solid rgba(0,0,0,.9);
+          opacity: .9;
+          -webkit-transform: scale(1.2);
+        }
+      }
     }
   }
 }
