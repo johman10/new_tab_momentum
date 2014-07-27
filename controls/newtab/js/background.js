@@ -1,18 +1,10 @@
 $(document).ready(function() {
-  date = new Date();
-  date.setDate(date.getDate() - 1);
-
-  if ( localStorage.last_date ) {
-    var last_date = new Date(localStorage.last_date)
-  }
-  else {
-    var last_date = localStorage.last_date = new Date();
+  if (!$.cookie("background")) {
+    var currentDate = new Date();
+    var date = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()+1, 0, 0, 0);
+    var backgroundNumber = Math.floor(Math.random() * 53);
+    document.cookie="background=" + backgroundNumber + ".jpg; expires=" + date;
   }
 
-  if ( !localStorage.background_info || ( last_date.getDate() <= date.getDate() ) ) {
-    localStorage.background_info = new Trianglify().generate(screen.width, screen.height).dataUrl;
-    localStorage.last_date = new Date();
-  }
-
-  $('#body').css('background-image', localStorage.background_info);
+  $('#body').css('background-image', "url(img/backgrounds/" + $.cookie("background") + ")");
 });

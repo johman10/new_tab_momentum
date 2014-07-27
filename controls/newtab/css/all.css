@@ -71,7 +71,7 @@ body {
   letter-spacing: 0;
   white-space: nowrap;
 }
-/* line 11, ../sass/partials/style.scss */
+/* line 8, ../sass/partials/style.scss */
 body #body {
   position: absolute;
   top: 0;
@@ -79,8 +79,9 @@ body #body {
   width: 100%;
   height: 100%;
   z-index: -10;
+  background-size: cover;
 }
-/* line 20, ../sass/partials/style.scss */
+/* line 18, ../sass/partials/style.scss */
 body .main_container {
   position: absolute;
   top: 50%;
@@ -92,9 +93,9 @@ body .main_container {
   transform: translate(-50%, -50%);
   display: none;
   opacity: .8;
-  color: black;
+  color: white;
 }
-/* line 27, ../sass/partials/style.scss */
+/* line 25, ../sass/partials/style.scss */
 body .editing {
   display: inline-block;
   min-width: 30px;
@@ -102,31 +103,31 @@ body .editing {
   padding-bottom: 5px;
   cursor: auto;
   outline: none;
-  border-bottom: solid 3px black;
+  border-bottom: solid 3px white;
 }
-/* line 37, ../sass/partials/style.scss */
+/* line 35, ../sass/partials/style.scss */
 body #clock {
   text-align: center;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 180px;
   font-weight: lighter;
 }
-/* line 44, ../sass/partials/style.scss */
+/* line 42, ../sass/partials/style.scss */
 body #day_wish {
   text-align: center;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 54px;
   font-weight: lighter;
 }
-/* line 50, ../sass/partials/style.scss */
+/* line 48, ../sass/partials/style.scss */
 body #day_wish.name_question {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 55, ../sass/partials/style.scss */
+/* line 53, ../sass/partials/style.scss */
 body form {
   display: inline-block;
 }
-/* line 58, ../sass/partials/style.scss */
+/* line 56, ../sass/partials/style.scss */
 body form #name_field {
   height: 74px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -136,17 +137,17 @@ body form #name_field {
   outline: none;
   background-color: transparent;
   text-align: center;
-  border-bottom: solid 3px black;
+  border-bottom: solid 3px white;
 }
-/* line 69, ../sass/partials/style.scss */
+/* line 67, ../sass/partials/style.scss */
 body form #name_field:focus {
   opacity: 1;
 }
-/* line 73, ../sass/partials/style.scss */
+/* line 71, ../sass/partials/style.scss */
 body form #name_field.error {
   border-bottom: solid 3px #c0392b !important;
 }
-/* line 79, ../sass/partials/style.scss */
+/* line 77, ../sass/partials/style.scss */
 body .main_focus_container {
   position: absolute;
   left: 50%;
@@ -160,19 +161,19 @@ body .main_focus_container {
   font-weight: normal;
   font-size: 30px;
   bottom: 20px;
-  color: black;
+  color: white;
 }
-/* line 88, ../sass/partials/style.scss */
+/* line 86, ../sass/partials/style.scss */
 body .main_focus_container .focus_question {
   text-align: center;
   display: none;
 }
-/* line 93, ../sass/partials/style.scss */
+/* line 91, ../sass/partials/style.scss */
 body .main_focus_container #focus_form {
   width: 100%;
   display: none;
 }
-/* line 97, ../sass/partials/style.scss */
+/* line 95, ../sass/partials/style.scss */
 body .main_focus_container #focus_form input {
   height: 40px;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -180,27 +181,27 @@ body .main_focus_container #focus_form input {
   font-size: 30px;
   line-height: 40px;
   border: 0;
-  border-bottom: solid 3px black;
+  border-bottom: solid 3px white;
   outline: none;
   background-color: transparent;
   text-align: center;
   width: 100%;
 }
-/* line 110, ../sass/partials/style.scss */
+/* line 108, ../sass/partials/style.scss */
 body .main_focus_container #focus_form input:focus {
   opacity: 1;
 }
-/* line 116, ../sass/partials/style.scss */
+/* line 114, ../sass/partials/style.scss */
 body .main_focus_container .focus_value {
   display: none;
   height: 30px;
   line-height: 30px;
 }
-/* line 121, ../sass/partials/style.scss */
+/* line 119, ../sass/partials/style.scss */
 body .main_focus_container .focus_value:hover .delete {
   opacity: .9;
 }
-/* line 125, ../sass/partials/style.scss */
+/* line 123, ../sass/partials/style.scss */
 body .main_focus_container .focus_value .delete {
   position: absolute;
   display: block;
@@ -217,7 +218,7 @@ body .main_focus_container .focus_value .delete {
   -webkit-transform-origin: 50% 50%;
   text-align: center;
 }
-/* line 141, ../sass/partials/style.scss */
+/* line 139, ../sass/partials/style.scss */
 body .main_focus_container .focus_value .delete:hover {
   border: 1px solid rgba(0, 0, 0, 0.9);
   opacity: .9;
