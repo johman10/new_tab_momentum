@@ -4,9 +4,9 @@ This repository contains an new tab module for Breach browser. It's based on the
 At this moment it only creates an welcome page with your name and a main focus for today. More features are coming soon.
 
 ## Screenshots
-![Name question](http://s30.postimg.org/s67affyjj/Schermafbeelding_2014_07_27_om_22_52_53.png)
-![Name filled in focus question](http://s30.postimg.org/4co1ahuov/Schermafbeelding_2014_07_27_om_22_54_07.png)
-![Fully filled in - WIP](http://s30.postimg.org/416kxqe8v/Schermafbeelding_2014_07_27_om_22_54_33.png)
+![Name question](http://i.imgur.com/2cpxEOO.jpg)
+![Name filled in focus question](http://i.imgur.com/rPy2I67.jpg)
+![Fully filled in - WIP](http://i.imgur.com/kvWRfmZ.jpg)
 
 # Install
  - Right click in breach browser and click "Configure Modules"
