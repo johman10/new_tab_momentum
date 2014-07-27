@@ -6,3 +6,7 @@ It creates an welcome page with your name and a main focus for today.
 ![Name question](http://i.imgur.com/Nlckt3J.jpg)
 ![Name filled in focus question](http://i.imgur.com/wvdC2Gh.jpg)
 ![Fully filled in - WIP](http://i.imgur.com/EOXGfqn.jpg)
+
+# Install
+ - Right click in breach browser and click "Configure Modules"
+ - In the input box type: `github:johman10/new_tab_momentum`
