@@ -138,16 +138,17 @@ body form #name_field {
   background-color: transparent;
   text-align: center;
   border-bottom: solid 3px white;
+  color: white;
 }
-/* line 67, ../sass/partials/style.scss */
+/* line 68, ../sass/partials/style.scss */
 body form #name_field:focus {
   opacity: 1;
 }
-/* line 71, ../sass/partials/style.scss */
+/* line 72, ../sass/partials/style.scss */
 body form #name_field.error {
   border-bottom: solid 3px #c0392b !important;
 }
-/* line 77, ../sass/partials/style.scss */
+/* line 78, ../sass/partials/style.scss */
 body .main_focus_container {
   position: absolute;
   left: 50%;
@@ -163,17 +164,17 @@ body .main_focus_container {
   bottom: 20px;
   color: white;
 }
-/* line 86, ../sass/partials/style.scss */
+/* line 87, ../sass/partials/style.scss */
 body .main_focus_container .focus_question {
   text-align: center;
   display: none;
 }
-/* line 91, ../sass/partials/style.scss */
+/* line 92, ../sass/partials/style.scss */
 body .main_focus_container #focus_form {
   width: 100%;
   display: none;
 }
-/* line 95, ../sass/partials/style.scss */
+/* line 96, ../sass/partials/style.scss */
 body .main_focus_container #focus_form input {
   height: 40px;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -186,22 +187,23 @@ body .main_focus_container #focus_form input {
   background-color: transparent;
   text-align: center;
   width: 100%;
+  color: white;
 }
-/* line 108, ../sass/partials/style.scss */
+/* line 110, ../sass/partials/style.scss */
 body .main_focus_container #focus_form input:focus {
   opacity: 1;
 }
-/* line 114, ../sass/partials/style.scss */
+/* line 116, ../sass/partials/style.scss */
 body .main_focus_container .focus_value {
   display: none;
   height: 30px;
   line-height: 30px;
 }
-/* line 119, ../sass/partials/style.scss */
+/* line 121, ../sass/partials/style.scss */
 body .main_focus_container .focus_value:hover .delete {
   opacity: .9;
 }
-/* line 123, ../sass/partials/style.scss */
+/* line 125, ../sass/partials/style.scss */
 body .main_focus_container .focus_value .delete {
   position: absolute;
   display: block;
@@ -218,7 +220,7 @@ body .main_focus_container .focus_value .delete {
   -webkit-transform-origin: 50% 50%;
   text-align: center;
 }
-/* line 139, ../sass/partials/style.scss */
+/* line 141, ../sass/partials/style.scss */
 body .main_focus_container .focus_value .delete:hover {
   border: 1px solid rgba(0, 0, 0, 0.9);
   opacity: .9;

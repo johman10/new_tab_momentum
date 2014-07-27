@@ -63,6 +63,7 @@ body {
       background-color: transparent;
       text-align: center;
       border-bottom: solid 3px $white;
+      color: $white;
 
       &:focus {
         opacity: 1;
@@ -104,6 +105,7 @@ body {
         background-color: transparent;
         text-align: center;
         width: 100%;
+        color: $white;
 
         &:focus {
           opacity: 1;
