@@ -1,5 +1,5 @@
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: lighter;
   font-size: 54px;
   letter-spacing: 0;
@@ -21,7 +21,7 @@ body {
     opacity: .8;
     color: $white;
   }
-  
+
   .editing {
     display: inline-block;
     min-width: 30px;
@@ -41,9 +41,9 @@ body {
 
   #day_wish {
     text-align: center;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 54px;
-    font-weight: lighter; 
+    font-weight: lighter;
 
     &.name_question {
       font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -55,7 +55,7 @@ body {
 
     #name_field {
       height: 74px;
-      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: lighter;
       font-size: 54px;
       border: 0;
@@ -78,11 +78,12 @@ body {
   .main_focus_container {
     @include centre(x);
     opacity: .8;
-    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 30px;
-    bottom: 20px;
+    bottom: 100px;
     color: $white;
+    text-align: center;
 
     .focus_question {
       text-align: center;
@@ -113,10 +114,14 @@ body {
       }
     }
 
-    .focus_value {
+    .focus_value_container {
       display: none;
-      height: 30px;
-      line-height: 30px;
+
+      h3 {
+        font-size: 1.17em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
 
       &:hover .delete {
         opacity: .9;
@@ -125,25 +130,39 @@ body {
       .delete {
         position: absolute;
         display: block;
-        height: 30px;
-        width: 30px;
-        top: 0;
-        right: -45px;
+        height: 26px;
+        width: 26px;
+        bottom: 0px;
+        right: -38px;
+        background: rgba(255,255,255,0);
         border-radius: 100px;
         cursor: pointer;
-        font-size: 15px;
+        font-size: 12px;
         line-height: 26px;
         opacity: 0;
         -webkit-transition: all 0.1s ease-in-out;
         -webkit-transform-origin: 50% 50%;
-        text-align: center;
+        border: 1px solid rgba(255,255,255,0);
 
         &:hover {
-          border: 1px solid rgba(0,0,0,.9);
-          opacity: .9;
+          border: 1px solid rgba(255,255,255,0.5);
+          opacity: 1;
           -webkit-transform: scale(1.2);
         }
       }
     }
+  }
+
+  .quote_container {
+    @include centre(x);
+    opacity: .8;
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    bottom: 20px;
+    color: $white;
+    max-width: 50%;
+    white-space:normal;
+    text-align: center;
   }
 }
