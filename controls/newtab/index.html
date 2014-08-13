@@ -13,9 +13,16 @@
   <script src="js/background.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/focus.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/quotes.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/calendar.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad" type="text/javascript"></script>
 </head>
 <body>
   <div id="body">
+    <div id='content'>
+      <h1>Events</h1>
+      <ul id='events'></ul>
+    </div>
+    <a href='#' id='authorize-button' onclick='handleAuthClick();'>Login</a>
     <div class="main_container">
       <div id="clock"></div>
       <div id="day_wish">
@@ -30,13 +37,13 @@
         <input type="text" name="focus_field" class="focus_field">
       </form>
       <div class="focus_value_container">
-      <h3>Today</h3>
-      <div class="focus_value"></div>
-      <span class="delete">x</span></div>
+        <h3>Today</h3>
+        <div class="focus_value"></div>
+        <span class="delete">x</span></div>
+      </div>
+      <div class="quote_container">
+        <div class="quote_content"></div>
+      </div>
     </div>
-    <div class="quote_container">
-      <div class="quote_content"></div>
-    </div>
-  </div>
-</body>
-</html>
+  </body>
+  </html>

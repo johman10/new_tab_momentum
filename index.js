@@ -21,16 +21,16 @@ var breach = require('breach_module');
 var bootstrap = function(port) {
   breach.init(function(cb_) {
     breach.register('core', 'inst:.*');
-  
+
     breach.expose('init', function(src, args, cb_) {
-      breach.module('core').call('tabs_new_tab_url', { 
+      breach.module('core').call('tabs_new_tab_url', {
         url: 'http://127.0.0.1:' + port + '/newtab'
       }, function(err) {
         console.log('New tab page set! [' + err + ']');
       });
       return cb_();
     });
-  
+
     breach.expose('kill', function(args, cb_) {
       process.exit(0);
     });
@@ -50,7 +50,7 @@ var bootstrap = function(port) {
   app.use(require('body-parser')());
   app.use(require('method-override')())
 
-  var http_srv = http.createServer(app).listen(0, '127.0.0.1');
+  var http_srv = http.createServer(app).listen(12345, '127.0.0.1');
 
   http_srv.on('listening', function() {
     var port = http_srv.address().port;
