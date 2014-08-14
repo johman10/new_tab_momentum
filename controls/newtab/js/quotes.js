@@ -147,7 +147,7 @@ $(document).ready(function($) {
     "Don't find fault. Find a remedy.",
     "Doubt kills more dreams than failure ever will.",
     "Don't let someone who gave up on their dreams talk you out of going after yours.",
-  ]
+  ];
 
-  $('.quote_content').html('<p>' + quotes[$.cookie("background")] + "</p>")
+  $('.quote_content').html('<p>' + quotes[$.cookie("background")] + "</p>");
 });

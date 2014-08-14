@@ -123,11 +123,16 @@ body #day_wish {
 body #day_wish.name_question {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 53, ../sass/partials/style.scss */
+/* line 54, ../sass/partials/style.scss */
+body #name_question,
+body #name_form {
+  display: none;
+}
+/* line 58, ../sass/partials/style.scss */
 body form {
   display: inline-block;
 }
-/* line 56, ../sass/partials/style.scss */
+/* line 61, ../sass/partials/style.scss */
 body form #name_field {
   height: 74px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -140,15 +145,15 @@ body form #name_field {
   border-bottom: solid 3px white;
   color: white;
 }
-/* line 68, ../sass/partials/style.scss */
+/* line 73, ../sass/partials/style.scss */
 body form #name_field:focus {
   opacity: 1;
 }
-/* line 72, ../sass/partials/style.scss */
+/* line 77, ../sass/partials/style.scss */
 body form #name_field.error {
   border-bottom: solid 3px #c0392b !important;
 }
-/* line 78, ../sass/partials/style.scss */
+/* line 83, ../sass/partials/style.scss */
 body .main_focus_container {
   position: absolute;
   left: 50%;
@@ -165,17 +170,17 @@ body .main_focus_container {
   color: white;
   text-align: center;
 }
-/* line 88, ../sass/partials/style.scss */
+/* line 93, ../sass/partials/style.scss */
 body .main_focus_container .focus_question {
   text-align: center;
   display: none;
 }
-/* line 93, ../sass/partials/style.scss */
+/* line 98, ../sass/partials/style.scss */
 body .main_focus_container #focus_form {
   width: 100%;
   display: none;
 }
-/* line 97, ../sass/partials/style.scss */
+/* line 102, ../sass/partials/style.scss */
 body .main_focus_container #focus_form input {
   height: 40px;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -190,25 +195,25 @@ body .main_focus_container #focus_form input {
   width: 100%;
   color: white;
 }
-/* line 111, ../sass/partials/style.scss */
+/* line 116, ../sass/partials/style.scss */
 body .main_focus_container #focus_form input:focus {
   opacity: 1;
 }
-/* line 117, ../sass/partials/style.scss */
+/* line 122, ../sass/partials/style.scss */
 body .main_focus_container .focus_value_container {
   display: none;
 }
-/* line 120, ../sass/partials/style.scss */
+/* line 125, ../sass/partials/style.scss */
 body .main_focus_container .focus_value_container h3 {
   font-size: 1.17em;
   font-weight: bold;
   margin-bottom: 5px;
 }
-/* line 126, ../sass/partials/style.scss */
+/* line 131, ../sass/partials/style.scss */
 body .main_focus_container .focus_value_container:hover .delete {
   opacity: .9;
 }
-/* line 130, ../sass/partials/style.scss */
+/* line 135, ../sass/partials/style.scss */
 body .main_focus_container .focus_value_container .delete {
   position: absolute;
   display: block;
@@ -226,13 +231,13 @@ body .main_focus_container .focus_value_container .delete {
   -webkit-transform-origin: 50% 50%;
   border: 1px solid rgba(255, 255, 255, 0);
 }
-/* line 147, ../sass/partials/style.scss */
+/* line 152, ../sass/partials/style.scss */
 body .main_focus_container .focus_value_container .delete:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
   opacity: 1;
   -webkit-transform: scale(1.2);
 }
-/* line 156, ../sass/partials/style.scss */
+/* line 161, ../sass/partials/style.scss */
 body .quote_container {
   position: absolute;
   left: 50%;

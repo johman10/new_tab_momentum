@@ -50,6 +50,11 @@ body {
     }
   }
 
+  #name_question,
+  #name_form {
+    display: none;
+  }
+
   form {
     display: inline-block;
 
